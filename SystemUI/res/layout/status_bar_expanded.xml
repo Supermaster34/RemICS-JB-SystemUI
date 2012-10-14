@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<FrameLayout android:id="@id/notification_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/notification_panel_bg" android:paddingTop="@dimen/notification_panel_padding_top" android:layout_marginLeft="@dimen/notification_panel_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+
+
+
+
+
+
+
+>
+    <com.android.systemui.statusbar.phone.NotificationWallpaper android:id="@id/notification_wallpaper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+
+
+ />
+
+    <TextView android:id="@id/carrier_label" android:layout_width="fill_parent" android:layout_height="@dimen/carrier_label_height" android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network" android:layout_gravity="bottom" android:layout_marginBottom="@dimen/close_handle_height" android:gravity="center" android:visibility="invisible"
+
+
+
+
+
+
+
+
+ />
+
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/close_handle_underlap"
+
+
+
+
+>
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/status_bar_expanded_header"
+
+
+ />
+
+        <com.android.systemui.statusbar.powerwidget.PowerWidget android:id="@id/exp_power_stat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/notification_panel_widget_height" android:layout_marginTop="44.0dip"
+
+
+
+
+
+ />
+
+        <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/notification_panel_header_and_widget" android:fadingEdge="none" android:overScrollMode="ifContentScrolls"
+
+
+
+
+
+
+>
+            <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_row_min_height"
+
+
+
+
+ />
+        </ScrollView>
+    </FrameLayout>
+
+    <com.android.systemui.statusbar.phone.CloseDragHandle android:id="@id/close" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" android:layout_gravity="bottom" android:orientation="vertical"
+
+
+
+
+>
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" android:layout_gravity="bottom" android:scaleType="fitXY" android:src="@drawable/status_bar_close"
+
+
+
+
+
+ />
+
+    </com.android.systemui.statusbar.phone.CloseDragHandle>
+</FrameLayout>

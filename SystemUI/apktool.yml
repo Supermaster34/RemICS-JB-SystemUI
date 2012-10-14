@@ -1,0 +1,6 @@
+version: 1.4.9.aed20bd
+apkFileName: i9000SystemUI.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

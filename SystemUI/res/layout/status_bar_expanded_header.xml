@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/notification_header_bg" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+
+
+
+
+
+
+>
+    <com.android.systemui.statusbar.policy.ClockStock android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/clock" android:layout_marginLeft="8.0dip" android:singleLine="true" android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Clock"
+
+
+
+
+
+
+ />
+
+    <com.android.systemui.statusbar.policy.DateView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/date" android:layout_marginLeft="8.0dip" android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date" android:layout_marginRight="8.0dip"
+
+
+
+
+
+ />
+
+    <com.android.systemui.statusbar.RotationToggle android:layout_width="32.0dip" android:layout_height="32.0dip" android:id="@id/rotation_lock_button" android:layout_margin="8.0dip" android:button="@drawable/ic_notify_rotation" android:contentDescription="@string/accessibility_rotation_lock_off" android:clickable="true"
+
+
+
+
+
+
+ />
+
+    <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:id="@id/settings_button" android:contentDescription="@string/accessibility_settings_button" android:scaleType="center" android:src="@drawable/ic_notify_quicksettings"
+
+
+
+
+
+ />
+
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0"
+
+
+
+ />
+
+    <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:id="@id/clear_all_button" android:contentDescription="@string/accessibility_clear_all" android:scaleType="center" android:src="@drawable/ic_notify_clear"
+
+
+
+
+
+ />
+
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@id/battery_notification" android:layout_gravity="center" layout="@layout/battery_cluster_view2"
+
+
+
+
+ />
+
+</LinearLayout>
